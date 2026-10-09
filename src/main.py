@@ -1,7 +1,10 @@
-from utils import square, is_even, celsius_to_fahrenheit
+from utils import square, is_even, celsius_to_fahrenheit, greet
 
 
 def main():
+    name = input("Enter your name: ")
+    print(greet(name))
+
     try:
         value = float(input("Enter a number in Celsius: "))
     except ValueError:
